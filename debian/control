@@ -1,0 +1,25 @@
+Source: node-fs-exists-sync
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sarath M S <debian@sarathms.me>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.8
+Homepage: https://github.com/jonschlinkert/fs-exists-sync
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-fs-exists-sync.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-fs-exists-sync.git
+
+Package: node-fs-exists-sync
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Drop-in replacement for Node.js's `fs.existsSync` with zero dependencies
+ fs-exists-sync is a drop-in replacement for Node.js's `fs.existsSync` with no
+ dependencies. Other libraries have crucial differences from fs.existsSync, or 
+ unnecessary dependencies.
+ .
+ Node.js is an event-based server-side JavaScript engine.

@@ -1,0 +1,12 @@
+node-fs-exists-sync (0.1.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 23:40:32 +0100
+
+node-fs-exists-sync (0.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #842245)
+
+ -- Sarath M S <debian@sarathms.me>  Thu, 27 Oct 2016 19:01:31 +0530
