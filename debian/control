@@ -1,25 +1,25 @@
 Source: node-fs-exists-sync
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Sarath M S <debian@sarathms.me>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-fs-exists-sync
+Vcs-Git: https://salsa.debian.org/js-team/node-fs-exists-sync.git
 Homepage: https://github.com/jonschlinkert/fs-exists-sync
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-fs-exists-sync.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-fs-exists-sync.git
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-fs-exists-sync
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Drop-in replacement for Node.js's `fs.existsSync` with zero dependencies
  fs-exists-sync is a drop-in replacement for Node.js's `fs.existsSync` with no
- dependencies. Other libraries have crucial differences from fs.existsSync, or 
+ dependencies. Other libraries have crucial differences from fs.existsSync, or
  unnecessary dependencies.
  .
  Node.js is an event-based server-side JavaScript engine.
